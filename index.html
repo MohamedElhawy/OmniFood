@@ -1,55 +1,105 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omni food - Hero section</title>
-    <!-- font face : Rubik -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OmniFood</title>
+        <link rel="stylesheet" href="./css/style.css">
 
-  <body>
-    <header>
-      <nav class="container">
-        <div>LOG</div>
-        <div>NAVIGATION</div>
-      </nav>
+        <!-- font face : Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 
-      <div class="container headerText">
-        <div class="headerText-inner">
-          <h1>A healthy meal delievered to your door every single day.</h1>
-          <p>
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs.
-          </p>
-          <a href="#" class="btn">Start eating well</a>
-        </div>
-      </div>
-    </header>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <section>
-      <div class="container">
-        <h2>Some random heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at
-          dolor! Consequatur molestias provident illo minima harum esse
-          cupiditate consectetur nisi. Repellat dolor necessitatibus, voluptatem
-          quas vitae perferendis aliquam alias. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Beatae dolores perspiciatis nostrum quod
-          corrupti culpa vitae fugit eaque id rem dolore, quia amet voluptatem
-          mollitia aliquam minima, qui temporibus doloremque?
-        </p>
-      </div>
-    </section>
-  </body>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    </head>
+
+
+    <body>
+
+        <header class="header">
+            
+            <img 
+            src="./resources/omnifood-logo.png" 
+            alt="omnifood logo"
+            class="logo"
+            >
+
+            <nav>
+                <ul class="nav-list">
+                    <li>  <a class="nav-list-item" href="#">Section 1</a>  </li>
+                    <li>  <a class="nav-list-item" href="#">Section 2</a>  </li>
+                    <li>  <a class="nav-list-item" href="#">Section 3</a>  </li>
+                    <li>  <a class="nav-list-item" href="#">Section 4</a>  </li>
+                    <li>  <a class="nav-list-item nav-CTA" href="#">Section 5</a>  </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <section class="section-hero">
+
+                <div class="hero">
+    
+                    <!-- left column in grid -->
+                    <div class="hero-text-box">
+    
+                        <h1 class="heading-primary">
+                            A healthy meal delivered to your door, every single day.
+                        </h1>
+    
+    
+                        <p class="hero-description">
+                            The smart <span>365-days-per-year</span> food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.
+                        </p>
+    
+    
+                        <a href="#" class="btn btn-hover margin-right">Start eating healthy!</a>
+                        <a href="#" class="btn not">Learn more &rarr;</a>
+    
+    
+                        <div class="delievered-meals">
+    
+                            <div class="delievered-imgs">
+                                <img src="./resources/customers/customer-1.jpg" alt="customer photo">
+                                <img src="./resources/customers/customer-2.jpg" alt="customer photo">
+                                <img src="./resources/customers/customer-3.jpg" alt="customer photo">
+                                <img src="./resources/customers/customer-4.jpg" alt="customer photo">
+                                <img src="./resources/customers/customer-5.jpg" alt="customer photo">
+                                <img src="./resources/customers/customer-6.jpg" alt="customer photo">
+                            </div>
+    
+                            <p class="delievered-text">
+                                <span>250,000+</span> meals delivered last year!
+                            </p>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                    <!-- right column in grid -->
+                    <div class="hero-img-box">
+                        <img src="./resources/hero.png" class="hero-img" alt="Woman eating food, in a high-end resturant, food boxes filled with meat, vegetables and rice.">
+                    </div>
+    
+    
+                </div>
+    
+            </section>
+
+
+    
+        </main>
+        
+
+
+    </body>
 </html>
