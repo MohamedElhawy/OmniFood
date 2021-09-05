@@ -1,66 +1,86 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-
-.container{
-    width: 1200px;
-    margin: 0 auto;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-
-body{
-    font-family: "Rubik" , sans-serif;
-    color: #444;
+body {
+  font-family: "Rubik", sans-serif;
+  color: #444;
 }
 
-
-header{
-    background: pink;
-    height: 100vh;
+header {
+  background: pink;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(./hero.jpg);
+  background-size: cover;
+  color: white;
 }
 
-nav{
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    background: orangered;
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
 }
 
-h1{
-    font-size: 52px;
-    margin-bottom: 32px;
+nav div {
+  cursor: pointer;
 }
 
-p{
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 48px;
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
 }
 
-.btn{
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    background: #e67e22;
-    display: inline-block;
-    padding: 16px 32px;
-    border-radius: 9px;
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
 }
 
-h2{
-    font-size: 44px;
-    margin-bottom: 48px;
+.btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background: #e67e22;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
 }
 
-section{
-    padding: 96px 0;
-    background: cornflowerblue;
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0;
+  background: cornflowerblue;
+}
+
+.headerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerText-inner {
+  width: 50%;
 }
