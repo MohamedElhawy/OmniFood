@@ -9,20 +9,23 @@
 Default: 400 , 500 , 600 , 700
 
 - line height
-Default: 1 , 1.05 , 1.6
+Default: 1 , 1.05 , 1.2 , 1.6
 
 - FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
+- letter spacing : -0.5px , 0.75
+
+
 
 ------ 2) color :
 
-Primary: #e67e22
+Primary: #e67e22 , #cf711f
 
-Tints: #fae5d3
+Tints: #fae5d3 , #f8d8bd
 Shades: 
 Accents:
-Greys: #555 , #333
+Greys: #2e1907 , #45260a
 
 
 ------- 5) Shadows
@@ -73,7 +76,7 @@ body
     font-family: "Rubik" , sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: #2e1907;
 }
 
 
@@ -109,7 +112,7 @@ body
 .nav-list-item
 {
     display: inline-block;
-    color: #333;
+    color: #45260a;
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3s;
@@ -137,7 +140,7 @@ body
 }
 
 
-/* hero section 
+/* section: hero
 ---------------------------*/
 .section-hero
 {
@@ -161,7 +164,7 @@ body
     font-size: 5.2rem;
     font-weight: 700;
     line-height: 1.05;
-    color: #333;
+    color: #45260a;
     letter-spacing: -0.5px;
     margin-bottom: 3.2rem;
 }
@@ -189,7 +192,7 @@ body
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-    transition: background 0.3s;
+    transition: all 0.3s;
 }
 
 .btn-hover:hover
@@ -205,7 +208,7 @@ body
 .not
 {
     background: #fff;
-    color: #555;
+    color: #2e1907;
 }
 
 .not:hover
@@ -259,3 +262,502 @@ body
     width: 100%;
 }
 
+
+
+/* section: featured in */
+
+.section-featured
+{
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+
+.featured-header
+{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #888;
+}
+
+.featured-logos
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured-logos img
+{
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+} 
+
+
+
+/* section: how it works */
+.section-how
+{
+    padding: 9.6rem 0;
+}
+
+/* reusable grid */
+.grid
+{
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid-column-2
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-column-3
+{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-column-4
+{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center-ver
+{
+    align-items: center;
+}
+
+.box-center
+{   
+    max-width: 120rem;    /* Standard */
+    margin: 0 auto;  
+    padding: 0 3.2rem;
+}
+
+
+
+.section-how-subheading
+{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.heading-secondary
+{
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+
+.how-step-number
+{
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.heading-3
+{
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.how-step-desc
+{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+
+.how-img-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.how-img-box::before,
+.how-img-box::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+
+.how-img-box::before
+{
+    background: #e67e22;
+    width: 60%;
+
+    /* using padding-bottom as a height percentage */
+    padding-bottom: 60%;
+
+    z-index: -2;
+}
+
+.how-img-box::after
+{
+    width: 45%;
+    padding-bottom: 45%;
+    background: #cf711f;
+    z-index: -1;
+}
+
+
+.how-img
+{
+    width: 35%;
+}
+
+
+/* section: meals */
+
+.section-meals
+{
+    padding: 9.6rem 0;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.meals-content
+{
+    row-gap: 2.6rem;
+}
+
+
+
+/* card */
+.meal
+{
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075); 
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.meal:hover
+{
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06); 
+}
+
+
+.meal-img
+{
+    width: 100%;
+}
+
+.meal-content
+{
+    margin: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags
+{
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.tag
+{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tag-vegetarian
+{
+    background: #51cf66;
+}
+
+.tag-paleo
+{
+    background: #ffd43b;
+}
+
+.meal-title
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #cf711f;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-attribute
+{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.meal-icon
+{
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #e67e22;
+}
+
+strong{
+    font-weight: 500;
+}
+
+.diet-title
+{
+    font-size: 3rem;
+}
+
+.diet-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.diet-list-item
+{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.diet-list-icon
+{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+/* reusable */
+.margin-bottom
+{
+    margin-bottom: 4.8rem !important;
+}
+
+.recipes
+{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.recipes-link
+{
+    display: inline-block;
+    color: #e67e22;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.recipes-link:hover
+{
+    color: #cf711f;
+    border-bottom-color: transparent;
+}
+
+
+/* section: testemonials */
+
+.section-testemonials
+{
+    background: #fae5d3;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.testemonials-box
+{
+    padding: 9.6rem;
+}
+
+.testemonials
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testemonials-img
+{
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testemonials-text
+{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testemonials-username
+{
+    font-size: 1.6rem;
+    color: #e67e22;
+}
+
+
+
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+}
+
+
+.gallery-item
+{
+    overflow: hidden;
+}
+
+.gallery-item img
+{
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover
+{
+    transform: scale(1.2);
+}
+
+
+/* section: pricing */
+
+.section-pricing
+{
+    padding: 9.6rem 0;
+}
+
+.pricing-card
+{
+    background: #fae5d3;
+    border-radius: 11px;
+    padding: 4.8rem;
+    width: 75%;
+}
+
+.pricing-card-1
+{
+    justify-self: end;
+    border: 2px solid #f8d8bd;
+    padding: 4.6rem;
+}
+
+.pricing-card-hightlight
+{
+    background: #f8d8bd;
+    padding: 4.8rem;
+}
+
+.pricing-card-header
+{
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.pricing-card-name
+{
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+}
+
+.pricing-card-price
+{
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.pricing-card-price span
+{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.pricing-card-text
+{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+
+
+.pricing-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.pricing-list-item
+{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.pricing-list-icon
+{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+.pricing-sign-up
+{
+    text-align: center;
+    margin-top: 4.8rem;
+}
