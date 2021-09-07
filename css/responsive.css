@@ -1,0 +1,201 @@
+/*
+
+Important Note 1: In media queries : 1 rem = 1 em = 16 px (standard for html font size) ,  the desktop value 62.5% will not work here. 
+
+--> convert px to rem :     Y(px) / 16 = X (px)
+
+Important Note 2: em is similar to rem but em have problems working on some devices.
+
+*/
+
+/* 
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+
+/* bellow 1344px (small Desktop) */
+@media (max-width: 84em)
+{
+    .hero
+    {
+        max-width: 120rem;
+    }
+
+    .heading-primary
+    {
+        font-size: 4.4rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .heading-3
+    {
+        font-size: 2.4rem;
+    }
+
+}
+
+
+
+/* bellow 1200px (landscape tablets - tablets flipped) */
+@media (max-width: 75em)
+{
+    html
+    {
+        font-size: 56.25%;   /* 9px / 16px = 0.5625 */
+    }
+
+    .grid
+    {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .heading-secondary
+    {
+        font-size: 3.6rem;
+    }
+
+    .section-how-subheading
+    {
+        font-size: 2.4rem;
+    }
+
+    .header
+    {
+        padding: 0 3.2rem;
+    }
+
+    .nav-list
+    {
+        gap: 3.2rem;
+    }
+
+    .hero
+    {
+        gap: 4.8rem;
+    }
+
+    .testemonials-box
+    {
+        padding: 9.6rem 3.2rem;
+    }
+
+}
+
+
+/* bellow 944px (tablets) */
+
+@media (max-width: 59em)
+{
+    html
+    {
+        font-size: 50%;   /* 8px /16px = 0.5 */
+    }
+
+    .hero
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text-box
+    {
+        text-align: center;
+    }
+
+    .hero-img-box
+    {
+        text-align: center;
+    }
+
+    .hero-img
+    {
+        width: 60%;
+    }
+
+    .delievered-meals
+    {
+        justify-content: center;
+    }
+
+    .featured-logos img
+    {
+        height: 2.4rem;
+    }
+
+    .how-step-number
+    {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        margin: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .section-testemonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .cta
+    {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cta-form
+    {
+        padding: 4.8rem 4.8rem 6.4rem 4.8rem;
+    }
+
+    .cta-form-box
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-form-box button
+    {
+        padding: 2.4rem 1.2rem;
+    }
+
+    .mobile-nav-open{
+        display: block;
+    }
+
+    .header-nav-box
+    {
+        background: rgba(255, 255, 255, 0.938);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* we used visibility instead of "display" because display doesn't allow animation */
+        visibility: hidden;
+    }
+
+    .nav-list
+    {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .nav-list-item
+    {
+        font-size: 3rem;
+    }
+
+}
