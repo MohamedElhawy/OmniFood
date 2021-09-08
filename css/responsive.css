@@ -88,6 +88,14 @@ Important Note 2: em is similar to rem but em have problems working on some devi
         padding: 9.6rem 3.2rem;
     }
 
+    .recipes
+    {
+        justify-self: start;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
 }
 
 
@@ -197,5 +205,169 @@ Important Note 2: em is similar to rem but em have problems working on some devi
     {
         font-size: 3rem;
     }
+
+    .recipes
+    {
+        font-size: 1.6rem;
+    }
+
+    .feature-title
+    {
+        font-size: 2rem;
+    }
+
+    .feature-text
+    {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+}
+
+/* bellow 704px (Smaller tablets) */
+@media (max-width: 44em)
+{
+
+    .grid-column-3 , .grid-column-4
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .diet
+    {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .recipes
+    {
+        grid-column: 1 / -1;
+    }
+
+    .heading-secondary
+    {
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-card
+    {
+        width: 100%;
+    }
+
+
+    .grid-footer
+    {
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .column-address
+    {
+        grid-column: 3;
+    }
+
+    .column-nav
+    {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+
+    .footer-column-logo , .column-address
+    {
+        grid-column: span 3;
+    }
+
+    .featured-logos img
+    {
+        height: 2rem;
+    }
+
+    
+}
+
+
+/* bellow 544px (phones) */
+@media (max-width: 34em)
+{
+
+    .grid
+    {
+        row-gap: 4.8rem;
+    }
+
+    .grid-column-2 , .grid-column-3 , .grid-column-4
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn
+    {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .section-hero
+    {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero
+    {
+        padding: 0 3.2rem;
+    }
+
+    .hero-img
+    {
+        width: 80%;
+    }
+
+    .featured-logos img
+    {
+        height: 1.2rem;
+    }
+
+    .how-img-box:nth-child(2)
+    {
+        grid-row: 1;
+    }
+
+    .how-img-box:nth-child(6)
+    {
+        grid-row: 5;
+    }
+
+    .how-img-box
+    {
+        transform: translateY(24px);
+    }
+
+    .testemonials
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery
+    {
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+    }
+
+    .cta 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-form
+    {
+        padding: 3.2rem;
+    }
+
+    .cta-img
+    {
+        height: 36rem;
+        grid-row: 1;
+    }
+
+
+
 
 }

@@ -149,6 +149,7 @@ body
 
 
 .mobile-nav-btn{
+    display: none;
     border: none;
     background: none;
     cursor: pointer;
