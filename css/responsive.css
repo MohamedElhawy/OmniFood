@@ -21,6 +21,7 @@ Important Note 2: em is similar to rem but em have problems working on some devi
 /* bellow 1344px (small Desktop) */
 @media (max-width: 84em)
 {
+
     .hero
     {
         max-width: 120rem;
@@ -103,9 +104,21 @@ Important Note 2: em is similar to rem but em have problems working on some devi
 
 @media (max-width: 59em)
 {
+
     html
     {
         font-size: 50%;   /* 8px /16px = 0.5 */
+    }
+
+    .mobile-nav-btn
+    {
+        display: block;
+        z-index: 5;
+    }
+
+    .mobile-nav-open
+    {
+        display: block;
     }
 
     .hero
@@ -175,10 +188,7 @@ Important Note 2: em is similar to rem but em have problems working on some devi
         padding: 2.4rem 1.2rem;
     }
 
-    .mobile-nav-open{
-        display: block;
-    }
-
+    /* nav panel on mobiles */
     .header-nav-box
     {
         background: rgba(255, 255, 255, 0.938);
@@ -186,13 +196,13 @@ Important Note 2: em is similar to rem but em have problems working on some devi
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: -1px;
         z-index: 3;
         display: flex;
         align-items: center;
         justify-content: center;
         /* we used visibility instead of "display" because display doesn't allow animation */
-        visibility: hidden;
+        display: none;
     }
 
     .nav-list
@@ -307,7 +317,7 @@ Important Note 2: em is similar to rem but em have problems working on some devi
 
     .section-hero
     {
-        padding: 2.4rem 0 6.4rem 0;
+        padding: 12.8rem 0 6.4rem 0;
     }
 
     .hero

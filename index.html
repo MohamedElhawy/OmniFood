@@ -1,4 +1,8 @@
+<!-- Note: this is a course project, its a work of fiction for learning purposes ONLY. all names and resources are owned by their respectable people. -->
+<!-- The course for this project is here : https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3 -->
+
 <!DOCTYPE html>
+
 <html lang="en">
 
     <head>
@@ -6,11 +10,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OmniFood</title>
+        <title>OmniFood: AI-powered Food delievery service</title>
+        <meta name="description" content="Omnifood is a startup IT/Food company, whoes goal is to deliever healthy food to its clients."> 
+        
+        <!-------------- icons ----------------->
+        <!-- browser 62px -->
+        <link rel="icon" href="./resources/web-icon-64px.png"> 
+        <!-- icon for homescreen website apple -->
+        <link rel="apple-touch-icon" href="./resources/apple-touch-icon.png">
+        <!-- icon for homescreen website android -->
+        <link rel="manifest" href="./manifest.webmanifest">
 
         <!-- css -->
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
+
+
+        <!-- js -->
+
+        <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" defer></script>
+        <script src="./js/script.js" defer></script>
+
+
 
         <!-- font face : Inter -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +49,7 @@
 
     <body>
 
-        <header class="header">
+        <header class="header" id="header">
             
             <a href="#">
                 <img 
@@ -39,20 +60,20 @@
             </a>
 
 
-            <nav class="header-nav-box">
+            <nav class="header-nav-box" id="header-nav-box">
                 <ul class="nav-list">
-                    <li>  <a class="nav-list-item" href="#">How it works</a>  </li>
-                    <li>  <a class="nav-list-item" href="#">Meals</a>  </li>
-                    <li>  <a class="nav-list-item" href="#">Testimonials</a>  </li>
-                    <li>  <a class="nav-list-item" href="#">Pricing</a>  </li>
-                    <li>  <a class="nav-list-item nav-CTA" href="#">Try for Free</a>  </li>
+                    <li>  <a class="nav-list-item" href="#works">How it works</a>  </li>
+                    <li>  <a class="nav-list-item" href="#meals">Meals</a>  </li>
+                    <li>  <a class="nav-list-item" href="#testemonials">Testimonials</a>  </li>
+                    <li>  <a class="nav-list-item" href="#pricing">Pricing</a>  </li>
+                    <li>  <a class="nav-list-item nav-CTA" href="#cta">Try for Free</a>  </li>
                 </ul>
             </nav>
 
             <!-- mobile icon nav -->
-            <button class="mobile-nav-btn">
-                <ion-icon class="mobile-nav-open" name="menu-outline"></ion-icon>
-                <ion-icon class="mobile-nav-close" name="close-outline"></ion-icon>
+            <button class="mobile-nav-btn" onclick="toggleNavMenu()">
+                <ion-icon class="mobile-nav-open" id="mobile-nav-open" name="menu-outline"></ion-icon>
+                <ion-icon class="mobile-nav-close" id="mobile-nav-close" name="close-outline"></ion-icon>
             </button>
 
         </header>
@@ -61,7 +82,7 @@
         <main>
 
             <!-- section: hero -->
-            <section class="section-hero">
+            <section class="section-hero" id="hero">
 
                 <div class="hero">
     
@@ -78,8 +99,8 @@
                         </p>
     
     
-                        <a href="#" class="btn btn-hover margin-right">Start eating healthy!</a>
-                        <a href="#" class="btn not">Learn more &rarr;</a>
+                        <a href="#cta" class="btn btn-hover margin-right">Start eating healthy!</a>
+                        <a href="#works" class="btn not">Learn more &rarr;</a>
     
     
                         <div class="delievered-meals">
@@ -114,7 +135,7 @@
 
 
             <!-- section: featured in -->
-            <section class="section-featured">
+            <section class="section-featured" id="feature">
                 <div class="box-center">
                     <h2 class="featured-header">As Featured in</h2>
                     <div class="featured-logos">
@@ -129,7 +150,7 @@
 
 
             <!-- section: it works -->
-            <section class="section-how">
+            <section class="section-how" id="works">
 
                 <div class="box-center">
                     <span class="section-how-subheading">How it Works</span>
@@ -178,7 +199,7 @@
 
 
             <!-- section: meals -->
-            <section class="section-meals">
+            <section class="section-meals" id="meals">
 
                 <div class="box-center text-center">
                     <span class="section-how-subheading">Meals</span>
@@ -275,7 +296,7 @@
 
 
             <!-- section: testemonials -->
-            <section class="section-testemonials">
+            <section class="section-testemonials" id="testemonials">
 
                 <div class="testemonials-box">
 
@@ -399,7 +420,7 @@
 
 
             <!-- section: pricing -->
-            <section class="section-pricing">
+            <section class="section-pricing" id="pricing">
 
                 <!-- header -->
                 <div class="box-center">
@@ -512,7 +533,7 @@
 
 
             <!-- section: CTA (call-to-action)) -->
-            <section class="section-cta">
+            <section class="section-cta" id="cta">
 
                 <div class="box-center">
 
@@ -592,7 +613,7 @@
                         <li> <a class="footer-column-nav-item" href="#"> <ion-icon class="social-link" name="logo-twitter"></ion-icon> </a> </li>
                     </ul>
 
-                    <p class="copyright">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.</p>
+                    <p class="copyright">Copyright &copy; <span id="copyright-year">2027</span> by Omnifood, Inc. All rights reserved.</p>
 
                 </div>
 
